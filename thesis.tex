@@ -9,22 +9,39 @@
 \usepackage{url}
 \usepackage[bookmarks=true, setpagesize=false, hidelinks]{hyperref}
 \usepackage{pxjahyper}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,backgrounds}
+\usepackage{fontawesome5}
 
 \usepackage{thesis}
 
+% si-paper の図（images/*_module.tex）で使うコマンド
+\newcommand{\frozen}{\textcolor{cyan!60!black}{\faSnowflake}~frozen}
+\def\DINOvTwo{DINOv2}
+\def\NoMaD{NoMaD}
+\def\CARE{CARE}
+\def\UniDepth{UniDepth}
+
 %% ---------------- ここを書き換える ----------------
 % 卒論は「卒 業 論 文」，修論は「修 士 論 文」
-\thesis{卒 業 論 文}
+\thesis{修 士 論 文}
 
+% TODO: タイトルはSI原稿のもの．修論のタイトルを決める．
 \title{
-  \scalebox{1.0}{タイトル}\\
+  \scalebox{1.0}{基盤モデルを用いた}\\
+  \scalebox{1.0}{シナリオ駆動形ナビゲーションの構築と評価}\\
   \vspace{-0.3zh}
-  \scalebox{0.7}{title}
+  \scalebox{0.7}{Construction and Evaluation of Scenario-Driven}\\
+  \scalebox{0.7}{Navigation Using Foundation Models}
 }
 \date{\today}
 \teacher{林原 靖男 教授}
-\organization{千葉工業大学 先進工学部 未来ロボティクス学科}
-\author{学籍番号 氏名}
+% TODO: 所属（研究科・専攻名）と学籍番号を確認する．
+\organization{千葉工業大学大学院 工学研究科 未来ロボティクス専攻}
+\author{学籍番号 石黒 巧}
 %% ---------------------------------------------------
 
 \setlength{\textwidth}{\fullwidth}
