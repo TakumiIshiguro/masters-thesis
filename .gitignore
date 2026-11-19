@@ -1,4 +1,5 @@
-/build/
+/build/*
+!/build/thesis.pdf
 *.aux
 *.bbl
 *.bcf
